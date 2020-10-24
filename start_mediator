@@ -1,9 +1,0 @@
-export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64'
-
-cd mediator  
-
-mvn clean install -DskipTests=true \
-    && docker build -t artiseasy/mediator:latest .  \
-    && docker image push artiseasy/mediator:latest \
-    && kubectl create -f mediator-deployment.yaml,mediator-service.yaml
-    && cd ..
