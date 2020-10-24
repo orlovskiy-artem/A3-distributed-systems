@@ -39,12 +39,6 @@ public interface EducationalMaterialService {
 
     TestStepOption addTestStepOption(UUID courseId, UUID testStepId, TestStepOptionRequestDTO body) throws ResponseStatusException;
 
-    void setCourseStatus(UUID courseId, CourseStatus courseStatus);
-
-    void activateCourse(UUID courseId);
-
-    void deactivateCourse(UUID courseId);
-
     // Delete
     void deleteEducationalStep(UUID courseId,
                                UUID educationalStepId);

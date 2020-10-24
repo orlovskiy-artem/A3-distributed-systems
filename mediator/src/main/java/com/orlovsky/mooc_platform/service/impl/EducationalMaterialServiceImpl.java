@@ -100,19 +100,6 @@ public class EducationalMaterialServiceImpl implements EducationalMaterialServic
     }
 
     @Override
-    public void activateCourse(UUID courseId) throws MissingResourceException {
-    }
-
-    @Override
-    public void deactivateCourse(UUID courseId) throws MissingResourceException {
-    }
-
-    @Override
-    public void setCourseStatus(UUID courseId, CourseStatus courseStatus) throws ResponseStatusException{
-
-    }
-
-    @Override
     public EducationalStep addEducationalStep(UUID courseId, EducationalStepDTO educationalStepDTO) throws ResponseStatusException,MissingResourceException {
         HttpEntity<EducationalStepDTO> request = new HttpEntity<>(educationalStepDTO);
         ResponseEntity<EducationalStep> response = restTemplate.exchange(educationalMaterialServiceUrl + "/courses/"+courseId.toString()+

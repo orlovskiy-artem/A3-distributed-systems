@@ -21,7 +21,4 @@ public interface CourseProgressService {
                                TestStepOptionDTO chosenAnswer) throws ResponseStatusException;
 
 
-    void congratulateStudent(Student student,
-                             Course course);
-
 }

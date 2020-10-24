@@ -2,8 +2,6 @@ package com.orlovsky.mooc_platform.service.impl;
 
 
 import com.orlovsky.mooc_platform.dto.TestStepOptionDTO;
-import com.orlovsky.mooc_platform.model.Course;
-import com.orlovsky.mooc_platform.model.Student;
 import com.orlovsky.mooc_platform.service.CourseProgressService;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
@@ -51,15 +49,6 @@ public class CourseProgressServiceImpl implements CourseProgressService {
         if(response.getStatusCode().is4xxClientError()) throw new ResponseStatusException(response.getStatusCode(),"Mediator has failed");
         return response.getBody();
     }
-
-    @Override
-    public void congratulateStudent(Student student,
-                                    Course course) {
-//        String congratulation = "Congratulations," + student.getFirstName() + " " + student.getLastName() +
-//                ",! You've done well. You've already finished course " + course.getTitle();
-//        System.out.println(congratulation);
-    }
-
 
 
 }

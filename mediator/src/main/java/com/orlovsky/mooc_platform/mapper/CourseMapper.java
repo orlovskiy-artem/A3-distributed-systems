@@ -11,7 +11,6 @@ import java.util.List;
 @Mapper
 public interface CourseMapper {
     CourseMapper INSTANCE = Mappers.getMapper(CourseMapper.class);
-//    @Mapping(source = "duration",target = "duration")
 
     @Mapping(source = "title",target = "title")
     @Mapping(source = "description",target = "description")

@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import javax.swing.text.StyledEditorKit;
 import java.util.MissingResourceException;
 import java.util.UUID;
 
@@ -82,13 +81,6 @@ public class CourseProgressServiceImpl implements CourseProgressService {
             studentProgressItemRepository.save(studentProgressItem);
         }
         return autoCheckerResponse.getBody();
-    }
-
-    @Override
-    public void congratulateStudent(UUID studentId, UUID courseId) {
-//        String congratulation = "Congratulations," + student.getFirstName() + " " + student.getLastName() +
-//                ",! You've done well. You've already finished course " + course.getTitle();
-//        System.out.println(congratulation);
     }
 
     @Override

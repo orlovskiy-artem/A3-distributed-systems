@@ -19,9 +19,6 @@ public interface CourseProgressService {
                                TestStepOptionDTO chosenAnswer) throws Exception;
 
 
-    void congratulateStudent(UUID studentId,
-                             UUID courseId);
-
     void checkIfStudentExists(UUID studentId) throws MissingResourceException;
 
     void checkIfCourseExists(UUID courseId) throws MissingResourceException;
